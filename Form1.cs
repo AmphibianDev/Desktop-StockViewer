@@ -82,7 +82,7 @@ namespace StockViewer
                 if (mouse_elapseTime > 0.2f)
                 {
                     Color backColor = Misc.GetColorAt(midPoint);
-                    if (Misc.ContrastColor(backColor) != textData[0].white)
+                    if (Misc.ContrastColor(backColor) != textData[0].isWhite)
                         this.Invoke((MethodInvoker)delegate { Change_FormColor(backColor); });
 
                     this.Invoke((MethodInvoker)delegate {
@@ -187,6 +187,9 @@ namespace StockViewer
 
         void Change_FormColor(Color backColor)
         {
+            //Resolve crash "Control does not support transparent background colors."
+            backColor = Color.FromArgb(255, backColor.R, backColor.G, backColor.B);
+
             BackColor = backColor;
             TransparencyKey = backColor;
 

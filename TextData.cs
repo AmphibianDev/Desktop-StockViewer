@@ -14,7 +14,7 @@ namespace StockViewer
         RichTextBox textBox;
         float cordX = 0;
 
-        public bool white;
+        public bool isWhite;
 
         public TextData(RichTextBox textBox)
         {
@@ -41,8 +41,8 @@ namespace StockViewer
 
         public void Update_Color(Color backColor)
         {
-            white = !white;
-            if (white)
+            isWhite = !isWhite;
+            if (isWhite)
             {
                 textBox.BackColor = backColor;
                 textBox.ForeColor = Color.White;
