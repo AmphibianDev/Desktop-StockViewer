@@ -116,7 +116,7 @@ namespace StockViewer
         async void Refresh_Text()
         {
             string html;
-            try { html = await client.GetStringAsync("https://query1.finance.yahoo.com/v7/finance/quote?fields=regularMarketPrice,postMarketPrice,preMarketPrice,regularMarketPreviousClose&symbols=" + settings.companies); }
+            try { html = await client.GetStringAsync("https://query1.finance.yahoo.com/v6/finance/quote?fields=regularMarketPrice,postMarketPrice,preMarketPrice,regularMarketPreviousClose&symbols=" + settings.companies); }
             catch { client = new HttpClient(); return; }
 
             YahooData jsonData = JsonConvert.DeserializeObject<YahooData>(html);
