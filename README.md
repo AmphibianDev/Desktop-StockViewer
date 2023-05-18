@@ -1,17 +1,33 @@
-# StockViewer
-Displays at the top of the screen (over windows but not over games) the live prices of stocks from the yahoo database.
+# StockViewer: Your Real-Time Stock Market Companion
 
-## Description
-The program was made to help me view live stock prices in one place at a glance without the need to open a website.<br/>
-The application is customizable, you can modify the stocks that it shows and many more.<br/>
-It even works if you have multiple screens.
+Always stay in sync with the financial markets using StockViewer, a convenient tool that floats live stock prices from Yahoo's API on the top of your screen. It's designed to keep critical market data at your fingertips without the constant need to visit a website. 
 
-## How to use
-Download the latest version of .exe from Releases and run it.<br/>
-To change the settings or to exit the program you can find the blue icon in the System Tray.<br/>
-For the changes in the Settings to take effect you need to press “Ok”.
+## Key Features
 
-## Optional compile
-Open “StockViewer.sln” with Visual Studio and open Tools -> NuGet Package Manager -> Package Manager Console<br/>
-Write in the console the command: dotnet publish -c Release<br/>
-The output will be a .exe file in the “StockViewer\bin\Release\net5.0-windows\win-x64\publish”
+- **Always-on Display:** The application floats over windows but stays hidden during gaming sessions for minimal disturbance. 
+- **Customizable Experience:** Personalize your stock portfolio by adding or removing stocks as you see fit. The options don't end there - dive in and explore more.
+- **Multi-monitor Support:** Got multiple screens? No problem. StockViewer has you covered.
+
+## Getting Started
+
+1. Download the latest .exe version from the Releases section and run it.
+2. Locate and right-click the blue StockViewer icon in your System Tray to access the settings or to exit the program.
+3. After making any changes in the Settings, remember to click “Ok” for them to take effect.
+
+## Building from Source
+
+For those interested in compiling the code:
+
+1. Open "StockViewer.sln" in Visual Studio.
+2. Navigate to Tools -> NuGet Package Manager -> Package Manager Console.
+3. Execute the following command in the console: `dotnet publish -c Release`.
+4. Your compiled .exe file will be located at "StockViewer\bin\Release\net5.0-windows\win-x64\publish".
+
+If you download .zip source file, you may need to unblock it if you want to debug or run the application in Visual Studio.
+
+1. Right-click the downloaded .zip source file.
+2. Choose Properties from the context menu.
+3. Look for the 'Unblock' checkbox in the bottom right corner and deselect it.
+4. Unzip the file.
+
+With StockViewer, you're always one glance away from your financial interests. Start using it today!
