@@ -1,3 +1,5 @@
+### The Yahoo API that was used is discontinued! The app doesn't work until a big rewrite.
+
 # StockViewer: Your Real-Time Stock Market Companion
 
 Always stay in sync with the financial markets using StockViewer, a convenient tool that floats live stock prices from Yahoo's API on the top of your screen. It's designed to keep critical market data at your fingertips without the constant need to visit a website. 
